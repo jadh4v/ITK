@@ -1163,7 +1163,9 @@ ProcessObject
     }
   DataObjectIdentifierType idxStr = name.substr(baseSize);
   DataObjectPointerArraySizeType idx;
-  return (std::istringstream(idxStr) >> idx);
+  // return (std::istringstream(idxStr) >> idx);
+  std::istringstream(idxStr) >> idx;
+  return idx;
 }
 
 /**

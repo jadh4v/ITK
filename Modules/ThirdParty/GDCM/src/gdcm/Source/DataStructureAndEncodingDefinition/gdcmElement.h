@@ -608,13 +608,13 @@ public:
 template <>
 class Element<VR::OB, VM::VM1> : public Element<VR::OB, VM::VM1_n> {};
 // Make it impossible to compile any other cases:
-template <int TVM> class Element<VR::OB, TVM>;
+// template <int TVM> class Element<VR::OB, TVM>;
 
 // Same for OW:
 template <>
 class Element<VR::OW, VM::VM1> : public Element<VR::OW, VM::VM1_n> {};
 // Make it impossible to compile any other cases:
-template <int TVM> class Element<VR::OW, TVM>;
+// template <int TVM> class Element<VR::OW, TVM>;
 
 } // namespace gdcm
 
