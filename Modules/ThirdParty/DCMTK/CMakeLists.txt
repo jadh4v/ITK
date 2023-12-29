@@ -88,7 +88,9 @@ if(APPLE)
       )
 endif()
 
-set(_ITKDCMTK_LIB_NAMES ofstd oflog dcmdata dcmimgle dcmimage dcmsr dcmpstat dcmnet dcmqrdb dcmiod)
+set(_ITKDCMTK_LIB_NAMES ofstd oflog dcmdata dcmimgle
+    dcmimage dcmsr dcmpstat dcmnet dcmqrdb dcmiod
+    dcmfg)
 if(WIN32)
   set(ITKDCMTK_LIBDEP_WIN iphlpapi ws2_32 netapi32 wsock32)
 endif()
