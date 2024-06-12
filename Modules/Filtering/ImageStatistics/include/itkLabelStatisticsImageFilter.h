@@ -23,7 +23,9 @@
 #include "itkSimpleDataObjectDecorator.h"
 #include "itkHistogram.h"
 #include "itkPrintHelper.h"
-#include <mutex>
+#if !defined(__wasi__) && !defined(__EMSCRIPTEN__)
+  #include <mutex>
+#endif
 #include <unordered_map>
 #include <vector>
 
@@ -419,7 +421,7 @@ private:
   RealType m_LowerBound{};
   RealType m_UpperBound{};
 
-  std::mutex m_Mutex{};
+  //std::mutex m_Mutex{};
 
 }; // end of class
 } // end namespace itk
