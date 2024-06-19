@@ -74,7 +74,7 @@ static int _generate_ident( char * id_str, size_t length )
   int result;
   
 // Linking in ws2_32  for gethostname is problematic with static libraries.
-#ifdef _WIN32
+#if defined(_WIN32) || defined(__wasi__) || defined(__EMSCRIPTEN__)
   strcpy(host_str, "unknown");
 #else
   if (gethostname(host_str, sizeof(host_str)) != 0) {
