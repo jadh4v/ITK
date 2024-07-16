@@ -16,4 +16,4 @@ set(DCMTK_GIT_REPOSITORY "https://github.com/InsightSoftwareConsortium/DCMTK.git
  #Matt McCormick (1):
        #Support CMAKE_CROSSCOMPILING_EMULATOR # pushed upstream in https://github.com/DCMTK/dcmtk/pull/94
 
-set(DCMTK_GIT_TAG "bed2645624b30823189b1afa0d0feb8c8964847e") # 20240311_DCMTK_PATCHES_FOR_ITK
+set(DCMTK_GIT_TAG "fe7cff5de40b67ae0490d476ddf17689c06bcaf4")

@@ -183,7 +183,7 @@ endif()
 #################################################################################
 set(CMAKE_THREAD_PREFER_PTHREAD TRUE)
 
-option(OPJ_USE_THREAD "Build with thread/mutex support " ON)
+option(OPJ_USE_THREAD "use threads" OFF)
 if(NOT OPJ_USE_THREAD)
    add_definitions( -DMUTEX_stub)
 endif(NOT OPJ_USE_THREAD)
